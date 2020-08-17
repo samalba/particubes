@@ -1,9 +1,6 @@
 # README
 
-### Development
+### Run locally:
 
-`$ docker-compose up -d`
+`./run-dev.sh`
 
-### Production
-
-`$ docker-compose up`

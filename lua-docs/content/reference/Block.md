@@ -7,15 +7,17 @@ keywords: particubes, game, mobile, scripting, cube, voxel, world
 
 Usually represents one block in the map. But could also represent a block for any shape in the game.
 
-## Class Field
+## Constructors
 
-### New (Function, read-only)
+Block constructors are functions to create and initialize Block instances.
+
+### Block(color, x, y, z) (Function)
 
 Creates and returns a new Block instance.
 
-Arguments are:
+**Arguments**:
 
-- color id (int)
+- color (int)
 - x (int) (optional)
 - y (int) (optional)
 - z (int) (optional)
@@ -23,8 +25,8 @@ Arguments are:
 This function can be called with either 1 argument or 4.
 
 ```
-local b1 = Block.New(id)
-local b2 = Block.New(id, x, y, z)
+local b1 = Block(id)
+local b2 = Block(id, x, y, z)
 ```
 
 ## Instance Fields

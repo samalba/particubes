@@ -9,12 +9,14 @@ Events are objects that can be sent to other [Players](/reference/Players) and/o
 
 ## Constructors
 
-### New (Function)
+Event constructors are functions to create and initialize Event instances.
+
+### Event([EventType](/reference/EventType)) (Function)
 
 This is how you create and send an event: 
 
 ```lua
-local myEvent = Event.New(eventType)
+local myEvent = Event(eventType)
 myEvent.someKey = "someValue"
 myEvent:SendTo(OtherPlayers)
 ```
